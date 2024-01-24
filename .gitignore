@@ -1,10 +1,11 @@
-credentials/*.json
+credentials/credentials-*.json
 package-lock.json
 node_modules/
 alt.js
 CLI.zip
 discord/
-logs/*.log
+logs/chatlog-*.log
+logs/chaterrors-*.log
 logs/saved\ logs
 not-modules/
 Download-CLI/

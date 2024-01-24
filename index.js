@@ -2,8 +2,8 @@ const mineflayer = require('mineflayer')
 const fs = require('node:fs')
 const path = require('node:path')
 
-const output = fs.createWriteStream('logs/chatlog-T.log')
-const errors = fs.createWriteStream('logs/chaterrors-T.log')
+const output = fs.createWriteStream('logs/chatlog.log')
+const errors = fs.createWriteStream('logs/chaterrors.log')
 const myConsole = new console.Console(output, errors)
 
 require('console-stamp')(myConsole, {
@@ -19,7 +19,7 @@ if (process.argv.length > 4) {
     process.exit(1)
 }
 
-const userCredentials = fs.readFileSync("credentials/credentials-T.json")
+const userCredentials = fs.readFileSync("credentials/credentials.json")
 const mcAuth = JSON.parse(userCredentials)
 
 const bot = mineflayer.createBot({
