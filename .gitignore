@@ -1,11 +1,12 @@
-credentials/credentials-*.json
-package-lock.json
+.vscode/
 node_modules/
-alt.js
-CLI.zip
+Download-CLI/
 discord/
+not-modules/
+logs/saved\ logs
+CLI.zip
+package-lock.json
+credentials/credentials-*.json
 logs/chatlog-*.log
 logs/chaterrors-*.log
-logs/saved\ logs
-not-modules/
-Download-CLI/
+alt.js
